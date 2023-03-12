@@ -1,6 +1,6 @@
 #lang pl 02
 
-#|Assigment 2- this assigment was submitted by Ayala Bouhnik-Gelbord and Gilad Moalem|#
+#|Assignment 2- this assignment was submitted by Ayala Bouhnik-Gelbord and Gilad Moalem|#
 
 #|question 1-
 Explenation: BNF for “LE”: a similarly simple language of “List Expressions”.
