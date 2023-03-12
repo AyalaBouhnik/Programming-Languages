@@ -1,13 +1,13 @@
 #lang pl
 
-;written by Ayala Bouhnik-Gelbord, 31/03/2022
-;assigment 1- question 1:
+;Written by Ayala Bouhnik-Gelbord, 31/03/2022
+;Assignment 1- question 1:
 
-#|we were asked to write in every question what was the challange-
+#|We were asked to write in every question what was the challange-
  this question was'nt really difficult, The main challange was the syntax and the liitle "annoying" things in
  learning a new language.|#
 
-;a helper function that returns the minimum number between two numbers-
+;Aמ helper function that returns the minimum number between two numbers-
 ;NOTE- this function already exist (it called min), but I wrote it because I wanted to practice more.
 (: min-between : Number Number -> Number)
  (define (min-between num1 num2)
@@ -19,7 +19,7 @@
 (test (min-between 3.4 5.7) => 3.4)
 (test (min-between -8 -5) => -8)
 
-;a helper function that returns the maximum number between two numbers-
+;AN helper function that returns the maximum number between two numbers-
 ;NOTE- this function already exist (it called max), but I wrote it because I wanted to practice more.
 (: max-between : Number Number -> Number)
  (define (max-between num1 num2)
@@ -32,7 +32,7 @@
 (test (max-between -8 -5) => -5)
 
 
-;the following function (min&max),consumes 5 numbers and returns a list containing the minimum and the maximum of them.
+;The following function (min&max),consumes 5 numbers and returns a list containing the minimum and the maximum of them.
 (: min&max : Number Number Number Number Number -> (Listof Number))
 (define (min&max num1 num2 num3 num4 num5)
   (list(min-between num1(min-between num2(min-between num3(min-between num4 num5))))
@@ -46,13 +46,13 @@
 ;--------------------------------------------------------------------------------------------------------------------
 ;-------------------------------------------------------------------------------------------------------------------
 
-;written by Ayala Bouhnik, 04/04/2022
-;assigment 1- question 2:
+;Written by Ayala Bouhnik, 04/04/2022
+;Assignment 1- question 2:
 
-#|we were asked to write in every question what was the challange-
+#|We were asked to write in every question what was the challange-
  the main challange was to understand how tail recursion works.|#
 
-#|this function (sublist-numbers) consumes a list of Any and returns a list containing all elements from the original
+#|This function (sublist-numbers) consumes a list of Any and returns a list containing all elements from the original
  list that are numbers.|#
 
 (: sublist-numbers : (Listof Any) -> (Listof Number))
@@ -76,12 +76,12 @@
 ;-------------------------------------------------------------------------------------------------------------------
 ;question 2b-
 
-#|we were asked to write in every question what was the challange-
+#|We were asked to write in every question what was the challange-
  The main challange for was to write the helper function. at first I wrote it in a bad syntax and got errors,
  and it took me time to find the right sytax to solve this question.|#
 
 
-#|this function consumes a list of lists(where the type of the elements in the inner list may be any type).
+#|This function consumes a list of lists(where the type of the elements in the inner list may be any type).
   The function returns a list of lists – such that for each inner list lst (in the original list) the following is done–
   1. If lst contains at least one number, then lst is replaced with a list of size two,
     containing the minimum and maximum in lst.
@@ -93,7 +93,7 @@
    [(null? lst) lst]
    [else (cons (min-max (first lst)) (min&max-lists (rest lst)))]))
 
-#|a helper function-
+#|Aמ helper function-
  gets list of any and return:
  *if the list is empty or does not contains any number- empty list
  *if the list contain only one number- it will return a list contain this number twice.
@@ -117,8 +117,8 @@
 ;-------------------------------------------------------------------------------------------------------------------
 ;-------------------------------------------------------------------------------------------------------------------
 
-;written by Ayala Bouhnik-Gelbord, 31/03/2022
-;assigment 1- question 3:
+;Written by Ayala Bouhnik-Gelbord, 31/03/2022
+;Assignment 1- question 3:
 
 (define-type KeyStack
   [EmptyKS] ;empty stack
