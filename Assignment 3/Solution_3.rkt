@@ -1,6 +1,6 @@
 #lang pl
 
-#|Assigment 3- this assigment was submitted by Ayala Bouhnik-Gelbord and Gilad Moalem|#
+#|Assignment 3- this assignment was submitted by Ayala Bouhnik-Gelbord and Gilad Moalem|#
 
 #|1. Extending the AE language-
 We were asked to change the syntax to be in postfix form,
